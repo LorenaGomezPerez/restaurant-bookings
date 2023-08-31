@@ -1,0 +1,373 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Qwitcher Grypen', cursive;
+	background-color: black;
+	background-image: url('./images/restaurantes-para-visitar-de-noche-cdmx-azulrestaurantes2.jpg');
+	background-size: contain;
+    background-repeat: no-repeat;
+	color:beige;
+}
+
+
+.logo{
+	width: 35%;
+	background-color: #0000007a;
+    border-radius: 20%;
+	box-shadow: 0px 0px 6px beige;
+}
+
+.imageHeader {
+	margin: 1rem 0 1rem 1rem;
+}
+
+.listRestaurants{
+	
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+@media all and (min-width:1140px){
+	.listRestaurants{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	align-items: baseline;
+	}
+}
+
+
+
+.titleRestaurant{
+	font-size: 1.563em;
+	margin: 2rem 0 1.5rem;
+}
+
+@media all and (min-width:768px){
+	.titleRestaurant{
+		font-size:2.5em;
+	}
+}
+
+@media all and (min-width:1140px){
+	.titleRestaurant{
+		font-size:3.2em;
+	}
+}
+
+.descriptionRestaurant{
+	font-size:1.25em;
+}
+
+@media all and (min-width:768px){
+	.descriptionRestaurant{
+		font-size:2.188em;
+	}
+}
+
+@media all and (min-width:1140px){
+	.descriptionRestaurant{
+		font-size:2em;
+	}
+}
+
+.mainTitle{
+	text-align: center;
+	font-size: 2.188em;
+	margin-top: 40%;
+}
+
+@media all and (min-width:768px){
+	.mainTitle{
+		font-size:3.125em;
+	}
+}
+
+@media all and (min-width:1140px){
+	.mainTitle{
+		font-size:4.5em;
+	}
+}
+
+.imageRestaurant{
+	width: 100%;
+}
+
+@media all and (min-width:1140px){
+	.imageRestaurant{
+		width: 350px;
+	}
+}
+
+/* Card Animation */
+  
+.card {
+	width: 100%;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	transition: transform 0.5s;
+	cursor: pointer;
+  }
+  
+  .front, .back {
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+  }
+  
+  .back {
+	transform: rotateY(180deg);
+	margin-top: 3rem;
+  }
+  
+  .card.clicked {
+	transform: rotateY(180deg);
+  }
+
+  .hideCard {
+	display: none;
+  }
+  
+  .imageChef {
+	width: 100%;
+	border-radius: 50%;
+  }
+
+/* Reserve */
+
+.reserveBox{
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid beige;
+	margin-top: 2rem;
+	padding-top: 1rem;
+}
+
+@media all and (min-width:768px){
+	.reserveBox{
+		height: 600px;
+	}
+}
+
+.reserveTitle{
+	font-size: 1.875em;
+	text-align: center;
+}
+@media all and (min-width:768px){
+	.reserveTitle{
+		font-size:3.5em;
+	}
+}
+
+
+
+
+.reserveDiv{
+	display: flex;
+	flex-direction: column;
+	margin-top:0.438rem;
+}
+
+.reserveText{
+	font-size:1,5em;
+	margin-left:0.625rem;
+
+}
+@media all and (min-width:768px){
+	.reserveText{
+		font-size:2em;
+	}
+}
+
+.reserveHour{
+	display: flex;
+}
+
+.inputDate{
+	width: 260px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+@media all and (min-width:768px){
+	.inputDate{
+		width: 400px;
+    	height: 35px;
+	}
+}
+
+.inputTime{
+	width: 141px;
+	height: 24px;
+    margin-left: 10px;
+
+}
+
+@media all and (min-width:768px){
+	.inputTime{
+		width: 180px;
+    	height: 30px;
+	}
+}
+
+.inputPerson{
+    width: 112px;
+    height: 23.9px;
+    margin-left: 9px;
+}
+
+@media all and (min-width:768px){
+	.inputPerson{
+		width: 210px;
+    	height: 30px;
+	}
+}
+
+.reserveInput{
+	width: 260px;
+    height: 20px;
+	font-family: 'Qwitcher Grypen', cursive;
+    margin-top: 0.313rem;
+    margin-left: 0.625rem;
+    border: 1px solid beige;
+}
+
+@media all and (min-width:768px){
+	.reserveInput{
+		width: 400px;
+    	height: 30px;
+	}
+}
+
+.buttonForm{
+	width: 30%;
+	font-family: 'Qwitcher Grypen', cursive;
+	font-size:1.8em;
+    border-radius: 30px;
+	background-color: #c6c698;
+	margin:14px 0px 60px;
+	padding: 0.3rem 0;
+}
+
+@media all and (min-width:768px){
+	.buttonForm{
+		width: 50%;
+    	padding: 0.5rem 0;
+	}
+}
+
+@media all and (min-width:1140px){
+	.buttonForm{
+		width: 30%;
+		font-size:2.5rem;
+    
+	}
+}
+
+/*Footer*/
+
+.containerFooter{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactDiv{
+	display: flex;
+    gap: 20px;
+}
+
+.hoursTitle{
+	font-size:1.563em;
+	margin-top: 1.25rem;
+}
+
+@media all and (min-width:768px){
+	.hoursTitle{
+		font-size:3em;
+	}
+}
+
+.imageContainer{
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+.logoFooter{
+	width: 100px;
+	height: 100px;
+}
+
+@media all and (min-width:1140px){
+	.logoFooter{
+		width: 250px;
+		height: 250px;
+	}
+}
+
+
+
+.icon{
+	font-size: 0.938em;
+	
+}
+
+@media all and (min-width:768px){
+	.icon{
+		font-size:1em;
+	}
+}
+
+@media all and (min-width:1140px){
+	.icon{
+		font-size:2.5em;
+	}
+}
+
+.hoursContainer{
+	display:flex;
+	flex-direction: column;
+    text-align: center;
+}
+
+.hoursText{
+	font-size:1em;
+}
+
+@media all and (min-width:1140px){
+	.hoursText{
+		font-size:2em;
+	}
+}
+
+
+.copyrigth{
+	width: 250px;
+	height: 50px;
+	text-align: center;
+	font-size: 0.938em;
+    border-top: 1px dotted beige;
+    margin: 20px auto 0 auto;
+}
+
+.copyrigthText{
+	font-size:1em;
+}
+
+@media all and (min-width:1140px){
+	.copyrigthText{
+		font-size:2em;
+	}
+}
+
